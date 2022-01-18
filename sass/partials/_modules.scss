@@ -1,0 +1,63 @@
+.about{
+    &-s1{
+        background-position: center!important;
+    }
+}
+.contact{
+    &-s1{
+        background-position: center!important;
+    }
+    &-s2{
+        background-position: right!important;
+    }
+}
+.index{
+    &-s1{
+        background-position: center!important;
+    }
+}
+header{
+    z-index:100;
+}
+textarea{
+    resize: none;
+}
+
+@media all and (max-width: 767px){
+    .about{
+        &-s1,&-s2{
+            background-color: #555!important;
+            background-blend-mode: multiply;
+        }
+        &-s2{
+            background-position: right!important;
+        }
+    }
+    .contact{
+        &-s1,&-s2{
+            background-color: #555!important;
+            background-blend-mode: multiply;
+        }
+    }
+    .index{
+        &-s1{
+            background-color: #555!important;
+            background-blend-mode: multiply;
+            background-position: right!important;
+        }
+    }
+    .navbar{
+        &-nav{
+            background-color: #333;
+            border: 1px solid #666;
+            opacity: 0.8;
+            padding-right: 10px;
+        }
+    }
+    .offer{
+        &-s1{
+            background-color: #555!important;
+            background-blend-mode: multiply;
+        }
+    }
+}
