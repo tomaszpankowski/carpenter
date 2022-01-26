@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
         <link rel="icon" href="img/favicon.png"/>
-        <title>Carpenter | Login</title>
+        <title>Carpenter | Message sent</title>
     </head>
     <body class="minh-100vh">
         <header class="position-absolute w-100">
@@ -41,51 +41,62 @@
                 </div>
             </nav>
         </header>
-        <main>            
-            <section class="login-s1 container-fluid d-flex align-items-center bg-secondary py-5 minh-100vh">
+        <section class="login-s1 container-fluid d-flex align-items-center bg-secondary py-5 minh-100vh">
+            <div class="my-auto w-100">
                 <div class="row mx-0 w-100 pt-5 mt-5">
-                    <div class="col-11 col-sm-8 col-md-6 col-lg-4 col-xxl-3 mx-auto">
-                        <div class="card bg-dark border-warning shadow">
-                            <div class="card-header border-bottom border-warning">
-                                <h6 class="text-warning text-uppercase my-1 text-shadow">
-                                    Login
-                                </h6>
-                            </div>
-                            <div class="card-body">
-                                <form class="text-start px-3">
-                                    <div class="form-group mb-3">
-                                        <label class="text-warning text-shadow mb-2 ms-1">Login</label>
-                                        <input class="form-control text-white bg-dark border-warning rounded-pill" 
-                                            type="text" 
-                                            name="flogin" 
-                                            placeholder="User login"
-                                            maxlength="80"/>
-                                    </div>
-                                    <div class="form-group mb-3">
-                                        <label class="text-warning text-shadow mb-2 ms-1">Password</label>
-                                        <input class="form-control text-white bg-dark border-warning rounded-pill" 
-                                            type="text" 
-                                            name="fpassword" 
-                                            placeholder="Enter password"
-                                            maxlength="80"/>
-                                    </div>
-                                    <div class="w-100 small border-bottom border-warning">
-                                        <p class="text-warning text-shadow">
-                                            Not registered? Register
-                                            <a href="register.html" class="fw-bold text-decoration-none text-warning text-shadow">Now</a>
-                                        </p>
-                                    </div>
-                                    <div class="w-100 text-end py-3">
-                                        <input type="reset" class="btn btn-outline-warning rounded-pill me-1" value="Clear"/>
-                                        <input type="submit" class="btn btn-outline-warning rounded-pill" value="Login"/>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                    <div class="col-xs-12 col-sm-8 col-md-6 offset-sm-2 offset-md-3 text-center">
+                        <h3 class="text-center font-header text-warning text-shadow mb-3">Message sent!</h3>
+                        <table class="table table-hover border text-start font-menu bg-light opacity-8">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th colspan="2" class="font-header">Summary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Full name</td>
+                                    <td>
+                                        <?php 
+                                        if(isset($_POST['fname']))
+                                            echo htmlspecialchars($_POST['fname']);
+                                        ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Phone</td>
+                                    <td>
+                                        <?php 
+                                        if(isset($_POST['fphone']))
+                                            echo htmlspecialchars($_POST['fphone']);
+                                        ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>
+                                        <?php 
+                                        if(isset($_POST['fmail']))
+                                            echo htmlspecialchars($_POST['fmail']);
+                                        ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Message</td>
+                                    <td>
+                                        <?php 
+                                        if(isset($_POST['fmsg']))
+                                            echo htmlspecialchars($_POST['fmsg']);
+                                        ?>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="contact.html" 
+                            class="btn btn-warning font-header mt-3">OK</a>
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
         <footer class="container-fluid d-flex text-dark align-items-center bg-dark text-white pt-3 opacity-9 border-top">
             <div class="row mx-0 w-100 small opacity-9">
                 <div class="col-12 col-md-5 text-center text-md-start">
