@@ -1,19 +1,25 @@
 <!DOCTYPE html>
+<html lang="en">
     <head>
-        <meta charset="utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no"/>
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
-        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
-        <link rel="icon" href="img/favicon.png"/>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+        <meta property="og:title" content="Carpenter">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+        <meta property="og:locale" content="en_US">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="icon" href="img/favicon.png">
         <title>Carpenter | Message sent</title>
     </head>
-    <body class="minh-100vh">
+    <body class="minh-100vh p-0">
         <header class="position-absolute w-100">
             <nav class="navbar navbar-dark navbar-expand-md bg-transparent">
                 <a href="index.html" class="navbar-brand ms-3">
-                    <img src="img/navbar_logo.png" class="img-fluid" alt="logo"/>
+                    <img src="img/navbar_logo.png" class="img-fluid" alt="logo">
                 </a>
                 <button class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#main-nav">
                     <span class="navbar-toggler-icon"></span>
@@ -97,7 +103,7 @@
                 </div>
             </div>
         </section>
-        <footer class="container-fluid d-flex text-dark align-items-center bg-dark text-white pt-3 opacity-9 border-top">
+        <footer class="container-fluid d-flex text-dark align-items-center bg-warning pt-3 opacity-9 border-top border-dark">
             <div class="row mx-0 w-100 small opacity-9">
                 <div class="col-12 col-md-5 text-center text-md-start">
                     <h6 class="text-uppercase mb-3">
@@ -109,9 +115,9 @@
                         functional and simply a more comfortable place to live.
                     </p>
                     <address class="border-start border-dark ps-3 small">
-                        Abcdfg Street 12,<br/>
-                        00-000 City,<br/>
-                        +(00) 987 654 124<br/>
+                        Abcdfg Street 12,<br>
+                        00-000 City,<br>
+                        +(00) 987 654 124<br>
                         email&#64;email.com
                     </address>
                 </div>
@@ -119,25 +125,25 @@
                     <ul class="list-inline">
                         <li class="list-inline-item">
                             <a href="#">
-                                <span class="fa fa-facebook text-white"></span>
+                                <span class="fa fa-facebook text-dark"></span>
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a href="#">
-                                <span class="fa fa-instagram text-white"></span>
+                                <span class="fa fa-instagram text-dark"></span>
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a href="#">
-                                <span class="fa fa-twitter text-white"></span>
+                                <span class="fa fa-twitter text-dark"></span>
                             </a>
                         </li>
                     </ul>       
                 </div>
-                <div class="col-12 text-center border-top">
+                <div class="col-12 text-center border-top border-dark">
                     <p class="mb-1">
-                        Copyright &copy; 2021 Tomasz Pankowski. 
-                        <a href="privacy.html" class="fw-bold text-white text-decoration-none">
+                        Copyright &copy; 2021-2022 Tomasz Pankowski. 
+                        <a href="privacy.html" class="fw-bold text-dark text-decoration-none">
                             Privacy policy
                         </a>
                     </p>
@@ -146,5 +152,6 @@
         </footer>
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/gpdr__bootstrap.js"></script>
     </body>
 </html>
