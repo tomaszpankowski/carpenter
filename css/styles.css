@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "StickNoBills";
+  src: url("../fonts/StickNoBills-VariableFont_wght.ttf");
+}
 /* line 1, ../sass/partials/_layout.scss */
 * {
   box-sizing: border-box;
@@ -575,40 +579,46 @@ body, html {
 }
 
 /* line 19, ../sass/partials/_modules.scss */
+h1, h2, h3, h4, h5, h6, .nav-link {
+  font-family: "StickNoBills";
+  letter-spacing: 1px;
+}
+
+/* line 23, ../sass/partials/_modules.scss */
 header {
   z-index: 100;
 }
 
-/* line 22, ../sass/partials/_modules.scss */
+/* line 26, ../sass/partials/_modules.scss */
 textarea {
   resize: none;
 }
 
 @media all and (max-width: 767px) {
-  /* line 28, ../sass/partials/_modules.scss */
+  /* line 32, ../sass/partials/_modules.scss */
   .about-s1, .about-s2 {
     background-color: #555 !important;
     background-blend-mode: multiply;
   }
-  /* line 32, ../sass/partials/_modules.scss */
+  /* line 36, ../sass/partials/_modules.scss */
   .about-s2 {
     background-position: right !important;
   }
 
-  /* line 37, ../sass/partials/_modules.scss */
+  /* line 41, ../sass/partials/_modules.scss */
   .contact-s1, .contact-s2 {
     background-color: #555 !important;
     background-blend-mode: multiply;
   }
 
-  /* line 43, ../sass/partials/_modules.scss */
+  /* line 47, ../sass/partials/_modules.scss */
   .index-s1 {
     background-color: #555 !important;
     background-blend-mode: multiply;
     background-position: right !important;
   }
 
-  /* line 50, ../sass/partials/_modules.scss */
+  /* line 54, ../sass/partials/_modules.scss */
   .navbar-nav {
     background-color: #333;
     border: 1px solid #666;
@@ -616,7 +626,7 @@ textarea {
     padding-right: 10px;
   }
 
-  /* line 58, ../sass/partials/_modules.scss */
+  /* line 62, ../sass/partials/_modules.scss */
   .offer-s1 {
     background-color: #555 !important;
     background-blend-mode: multiply;
